@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
 import logoUrl from "@/assets/pes-logo.png";
+import pixelLogoUrl from "@/assets/pixel-logo.png";
 
 export function SiteFooter() {
   return (
@@ -90,9 +91,18 @@ export function SiteFooter() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
           <span>© {new Date().getFullYear()} Power Engineering Services Company (SMC) Pvt Ltd.</span>
-          <span className="font-mono uppercase tracking-widest">
-            Working Hours · Mon–Sat · 08:00 — 18:00
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="text-muted-foreground/80">Developed by</span>
+            <a
+              href="https://pixelwebdevelopers.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 font-medium text-[#000000] dark:text-[#3399ff] hover:opacity-85 transition-opacity"
+            >
+              <img src={pixelLogoUrl} alt="Pixel Web Developers" className="h-4 w-auto object-contain" />
+              <span>Pixel Web Developers</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
