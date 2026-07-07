@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
-import logoAsset from "@/assets/pes-logo.png.asset.json";
+import logoUrl from "@/assets/pes-logo.png";
 
 export function SiteFooter() {
   return (
@@ -9,7 +9,7 @@ export function SiteFooter() {
       <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-10">
         <div className="grid gap-14 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <img src={logoAsset.url} alt="PESC" className="h-12 w-auto" />
+            <img src={logoUrl} alt="PESC" className="h-12 w-auto" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
               Engineering, Procurement and Construction for Pakistan's power,
               energy and oil & gas sector. Delivering capital efficiency and

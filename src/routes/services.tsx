@@ -22,6 +22,7 @@ import { PageHero } from "@/components/page-hero";
 import serviceWelding from "@/assets/service-welding.jpg";
 import serviceMaintenance from "@/assets/service-maintenance.jpg";
 import serviceConstruction from "@/assets/service-construction.jpg";
+import serviceConstructionNew from "@/assets/service-construction-new.png";
 import serviceBlasting from "@/assets/service-blasting.jpg";
 import serviceNdt from "@/assets/service-ndt.jpg";
 import serviceManpower from "@/assets/service-manpower.jpg";
@@ -66,7 +67,7 @@ const SERVICES = [
     icon: HardHat,
     title: "Construction & Engineering",
     body: "Civil and mechanical construction of processing units, warehouses, control rooms and utility buildings.",
-    image: serviceConstruction,
+    image: serviceConstructionNew,
   },
   {
     icon: Cog,
@@ -153,7 +154,7 @@ function Services() {
                   height={1400}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                 <div className="absolute left-4 top-4 grid h-11 w-11 place-items-center rounded-lg border border-border bg-background/80 text-primary backdrop-blur">
                   <Icon className="h-5 w-5" />
                 </div>

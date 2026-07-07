@@ -80,7 +80,7 @@ function Index() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden lg:h-[calc(100vh-5rem)] lg:max-h-[calc(100vh-5rem)] lg:min-h-[580px]">
         <div className="absolute inset-0">
           <img
             src={heroRefinery}
@@ -94,13 +94,13 @@ function Index() {
         </div>
         <div className="grid-lines pointer-events-none absolute inset-0 opacity-30" />
 
-        <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col justify-end px-6 pt-40 pb-20">
+        <div className="relative mx-auto flex min-h-[92vh] lg:min-h-0 lg:h-full max-w-7xl flex-col justify-end px-6 pt-40 pb-20 lg:pt-12 lg:pb-8 xl:pt-20 xl:pb-12">
           <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.4em] text-primary animate-rise">
             <span className="inline-flex h-2 w-2 animate-glow rounded-full bg-primary" />
             Est. 2010 · Hyderabad · Pakistan
           </div>
           <h1
-            className="mt-6 max-w-5xl text-balance text-5xl font-bold leading-[0.95] tracking-tight sm:text-7xl md:text-[8rem] animate-rise"
+            className="mt-6 lg:mt-4 max-w-5xl text-balance text-5xl font-bold leading-[1.0] tracking-tight sm:text-7xl lg:text-[3.6rem] xl:text-[4.8rem] 2xl:text-[5.5rem] xl:leading-[0.95] animate-rise"
             style={{ animationDelay: "80ms" }}
           >
             Engineering the{" "}
@@ -108,7 +108,7 @@ function Index() {
             energy sector.
           </h1>
           <p
-            className="mt-8 max-w-2xl text-lg leading-relaxed text-foreground/80 animate-rise"
+            className="mt-8 lg:mt-3 xl:mt-5 max-w-2xl text-lg lg:text-xs xl:text-sm 2xl:text-base xl:leading-relaxed text-foreground/80 animate-rise"
             style={{ animationDelay: "160ms" }}
           >
             PESC is a full-scope EPC and maintenance contractor for oil, gas
@@ -116,7 +116,7 @@ function Index() {
             around the assets that keep the grid running.
           </p>
           <div
-            className="mt-10 flex flex-wrap items-center gap-4 animate-rise"
+            className="mt-10 lg:mt-4 xl:mt-6 flex flex-wrap items-center gap-4 animate-rise"
             style={{ animationDelay: "240ms" }}
           >
             <Link
@@ -134,7 +134,7 @@ function Index() {
             </Link>
           </div>
 
-          <div className="mt-20 grid grid-cols-2 gap-x-8 gap-y-6 border-t border-border pt-8 sm:grid-cols-4">
+          <div className="mt-20 lg:mt-8 xl:mt-10 grid grid-cols-2 gap-x-8 gap-y-4 xl:gap-y-6 border-t border-border pt-8 lg:pt-4 xl:pt-6 sm:grid-cols-4">
             {[
               ["2010", "Established"],
               ["54+", "Employees"],
@@ -142,7 +142,7 @@ function Index() {
               ["24/7", "Field Support"],
             ].map(([k, v]) => (
               <div key={v}>
-                <div className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+                <div className="font-display text-3xl font-bold text-foreground sm:text-4xl lg:text-xl xl:text-2xl 2xl:text-3xl">
                   {k}
                 </div>
                 <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
@@ -336,7 +336,7 @@ function Index() {
                   height={1000}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>
               <div className="p-8">
                 <div className="font-mono text-[10px] uppercase tracking-[0.3em] text-primary">

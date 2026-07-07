@@ -198,16 +198,16 @@ function About() {
               loading="lazy"
               width={1200}
               height={1400}
-              className="h-full w-full object-cover opacity-40"
+              className="h-full w-full object-cover opacity-30"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/90 to-black/60" />
           </div>
           <div className="relative grid gap-10 p-10 sm:p-16 lg:grid-cols-2">
             <div>
               <div className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
                 — How we operate
               </div>
-              <h3 className="mt-4 text-3xl font-bold sm:text-4xl">
+              <h3 className="mt-4 text-3xl font-bold sm:text-4xl text-white">
                 Delivery-first. Safety non-negotiable.
               </h3>
             </div>
@@ -218,7 +218,7 @@ function About() {
                 "Codes: ASME, API, AWS, ASTM — applied and audited.",
                 "Cost, schedule and quality reported weekly to the client.",
               ].map((v) => (
-                <li key={v} className="flex gap-3 text-foreground/90">
+                <li key={v} className="flex gap-3 text-white/95">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                   <span>{v}</span>
                 </li>
