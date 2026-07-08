@@ -31,13 +31,13 @@ export const Route = createFileRoute("/services")({
   component: Services,
   head: () => ({
     meta: [
-      { title: "Services — PESC" },
+      { title: "Services — PES" },
       {
         name: "description",
         content:
           "Fabrication, welding, construction, mechanical engineering, chemical cleaning, NDT and manpower supply for Pakistan's power and hydrocarbon sector.",
       },
-      { property: "og:title", content: "Services — PESC" },
+      { property: "og:title", content: "Services — PES" },
       { property: "og:url", content: "/services" },
     ],
     links: [{ rel: "canonical", href: "/services" }],
@@ -93,6 +93,24 @@ const SERVICES = [
     body: "Welders, fitters, riggers, technicians and site engineers — mobilised nationally within 48 hours.",
     image: serviceManpower,
   },
+  {
+    icon: Building2,
+    title: "Civil Construction & Works",
+    body: "Foundations, structural concrete, industrial warehousing, control rooms, and heavy equipment civil pads.",
+    image: serviceConstructionNew,
+  },
+  {
+    icon: Zap,
+    title: "Electrical Works",
+    body: "Industrial cabling, earthing, substation installation, power distribution networks, and commissioning.",
+    image: serviceMaintenance,
+  },
+  {
+    icon: Cpu,
+    title: "Instrumentation & Testing",
+    body: "Calibration, installation and loop testing of transmitters, control valves, automation systems, and safety interlocks.",
+    image: serviceNdt,
+  },
 ];
 
 const INDUSTRIES = [
@@ -100,7 +118,11 @@ const INDUSTRIES = [
   { icon: Fuel, name: "Oil & Gas", d: "Upstream, midstream and processing works." },
   { icon: Factory, name: "Fertilizer", d: "Urea, ammonia and utility plants." },
   { icon: Leaf, name: "Energy", d: "Renewables, cogeneration and grid infrastructure." },
-  { icon: FlaskConical, name: "Coatings & Plating", d: "Corrosion, chemical and abrasion protection." },
+  {
+    icon: FlaskConical,
+    name: "Coatings & Plating",
+    d: "Corrosion, chemical and abrasion protection.",
+  },
   { icon: Cpu, name: "Plastics & Composites", d: "Process piping and structural composite work." },
   { icon: Package, name: "Packaging & Plastics", d: "Utility, cleanroom and support services." },
   { icon: Building2, name: "Construction", d: "Industrial civil, warehousing and shed erection." },
@@ -113,8 +135,8 @@ function Services() {
         eyebrow="Services"
         title={
           <>
-            Comprehensive <span className="text-primary">EPC</span> services
-            for clients across diverse industries.
+            Comprehensive <span className="text-primary">EPC</span> services for clients across
+            diverse industries.
           </>
         }
         description="Power Engineering Services Company delivers capital efficiency and project certainty across the full asset life cycle — from concept through commissioning through the next turnaround."
@@ -161,9 +183,7 @@ function Services() {
               </div>
               <div className="flex flex-1 flex-col p-6">
                 <h3 className="text-xl font-bold">{title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  {body}
-                </p>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{body}</p>
                 <div className="mt-4 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.3em] text-primary">
                   Learn more <ArrowUpRight className="h-3.5 w-3.5" />
                 </div>
@@ -185,16 +205,13 @@ function Services() {
                 Wherever heavy industry lives.
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
-                From upstream gas condensate fields to downstream fertilizer
-                plants, we bring the same engineering rigour to every site.
+                From upstream gas condensate fields to downstream fertilizer plants, we bring the
+                same engineering rigour to every site.
               </p>
             </div>
             <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
               {INDUSTRIES.map(({ icon: Icon, name, d }) => (
-                <div
-                  key={name}
-                  className="group bg-card p-8 transition-colors hover:bg-secondary"
-                >
+                <div key={name} className="group bg-card p-8 transition-colors hover:bg-secondary">
                   <Icon className="h-6 w-6 text-primary" />
                   <h3 className="mt-5 text-lg font-bold">{name}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{d}</p>

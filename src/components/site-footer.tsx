@@ -10,11 +10,10 @@ export function SiteFooter() {
       <div className="relative mx-auto max-w-7xl px-6 pt-20 pb-10">
         <div className="grid gap-14 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <img src={logoUrl} alt="PESC" className="h-12 w-auto" />
+            <img src={logoUrl} alt="PES" className="h-12 w-auto" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Engineering, Procurement and Construction for Pakistan's power,
-              energy and oil & gas sector. Delivering capital efficiency and
-              project certainty since 2010.
+              Engineering, Procurement and Construction for Pakistan's power, energy and oil & gas
+              sector. Delivering capital efficiency and project certainty since 2010.
             </p>
             <div className="mt-6 flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-muted-foreground">
               <span className="inline-block h-1.5 w-1.5 animate-glow rounded-full bg-primary" />
@@ -35,10 +34,7 @@ export function SiteFooter() {
                 ["/contact", "Contact"],
               ].map(([to, label]) => (
                 <li key={to}>
-                  <Link
-                    to={to}
-                    className="text-foreground/70 transition-colors hover:text-primary"
-                  >
+                  <Link to={to} className="text-foreground/70 transition-colors hover:text-primary">
                     {label}
                   </Link>
                 </li>
@@ -90,7 +86,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center">
-          <span>© {new Date().getFullYear()} Power Engineering Services Company (SMC) Pvt Ltd.</span>
+          <span>© {new Date().getFullYear()} Power Engineering Services (SMC) Pvt Ltd.</span>
           <div className="flex items-center gap-2">
             <span className="text-muted-foreground/80">Developed by</span>
             <a
@@ -99,7 +95,11 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 font-medium text-[#000000] dark:text-[#3399ff] hover:opacity-85 transition-opacity"
             >
-              <img src={pixelLogoUrl} alt="Pixel Web Developers" className="h-4 w-auto object-contain" />
+              <img
+                src={pixelLogoUrl}
+                alt="Pixel Web Developers"
+                className="h-4 w-auto object-contain"
+              />
               <span>Pixel Web Developers</span>
             </a>
           </div>

@@ -7,6 +7,9 @@ import {
   Radar,
   Sparkles,
   Users,
+  Building2,
+  Zap,
+  Cpu,
   ArrowRight,
   Phone,
 } from "lucide-react";
@@ -22,13 +25,13 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "PESC — Engineering the backbone of Pakistan's energy sector" },
+      { title: "PES — Engineering the backbone of Pakistan's energy sector" },
       {
         name: "description",
         content:
           "Power Engineering Services Company delivers EPC, fabrication, welding, construction and maintenance for oil, gas and power operators across Pakistan.",
       },
-      { property: "og:title", content: "PESC — Engineering Pakistan's energy backbone" },
+      { property: "og:title", content: "PES — Engineering Pakistan's energy backbone" },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -42,21 +45,23 @@ const CAPABILITIES = [
   { icon: Radar, name: "Non-Destructive Testing", href: "/services" },
   { icon: Sparkles, name: "Chemical Cleaning & Hydro Jetting", href: "/services" },
   { icon: Users, name: "Skilled Manpower Supply", href: "/services" },
+  { icon: Building2, name: "Civil Construction & Works", href: "/services" },
+  { icon: Zap, name: "Electrical Works", href: "/services" },
+  { icon: Cpu, name: "Instrumentation & Testing", href: "/services" },
 ];
 
 const CLIENTS = [
-  "OGDCL",
+  "PARCO",
   "Mari Petroleum",
   "MPCL",
-  "Engro Corp",
-  "PARCO",
+  "Tando Alam Field",
+  "Sinjhoro",
   "Bobi Oil Complex",
-  "Sujawal Gas Field",
 ];
 
 const FEATURED_PROJECTS = [
   {
-    tag: "OGDCL · Sinjhoro",
+    tag: "Sinjhoro",
     title: "Plant Outage — ATA 2019",
     body: "Successfully executed annual turn-around covering maintenance and up-gradation of aged equipment across the Sinjhoro Gas Condensate Field.",
     image: projectOutage,
@@ -88,57 +93,59 @@ function Index() {
             height={1200}
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
         </div>
         <div className="grid-lines pointer-events-none absolute inset-0 opacity-30" />
 
-        <div className="relative mx-auto flex min-h-[92vh] lg:min-h-0 lg:h-full max-w-7xl flex-col justify-end px-6 pt-40 pb-20 lg:pt-12 lg:pb-8 xl:pt-20 xl:pb-12">
-          <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.4em] text-primary animate-rise">
-            <span className="inline-flex h-2 w-2 animate-glow rounded-full bg-primary" />
-            Est. 2010 · Hyderabad · Pakistan
-          </div>
-          <h1
-            className="mt-6 lg:mt-4 max-w-5xl text-balance text-5xl font-bold leading-[1.0] tracking-tight sm:text-7xl lg:text-[3.6rem] xl:text-[4.8rem] 2xl:text-[5.5rem] xl:leading-[0.95] animate-rise"
-            style={{ animationDelay: "80ms" }}
-          >
-            Engineering the <span className="text-primary">backbone</span> of Pakistan's energy
-            sector.
-          </h1>
-          <p
-            className="mt-8 lg:mt-3 xl:mt-5 max-w-2xl text-lg lg:text-xs xl:text-sm 2xl:text-base xl:leading-relaxed text-foreground/80 animate-rise"
-            style={{ animationDelay: "160ms" }}
-          >
-            PESC is a full-scope EPC and maintenance contractor for oil, gas and power operators. We
-            design, build, weld, inspect and turn around the assets that keep the grid running.
-          </p>
-          <div
-            className="mt-10 lg:mt-4 xl:mt-6 flex flex-wrap items-center gap-4 animate-rise"
-            style={{ animationDelay: "240ms" }}
-          >
-            <Link
-              to="/projects"
-              className="group inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.02] hover:shadow-[0_0_40px_oklch(0.78_0.17_65/0.4)]"
+        <div className="relative mx-auto flex min-h-[92vh] lg:min-h-0 lg:h-full max-w-7xl flex-col justify-end px-6 pt-40 pb-20 lg:pt-16 lg:pb-8 xl:pt-24 xl:pb-12">
+          <div className="max-w-3xl lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+            <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-[0.4em] text-primary animate-rise">
+              <span className="inline-flex h-2 w-2 animate-glow rounded-full bg-primary" />
+              Est. 2010 · Hyderabad · Pakistan
+            </div>
+            <h1
+              className="mt-4 lg:mt-3 text-balance text-5xl font-bold leading-[1.0] tracking-tight sm:text-7xl lg:text-[2.8rem] xl:text-[3.8rem] 2xl:text-[4.5rem] xl:leading-[0.95] animate-rise"
+              style={{ animationDelay: "80ms" }}
             >
-              Explore our portfolio
-              <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
-            </Link>
-            <Link
-              to="/services"
-              className="inline-flex items-center gap-3 rounded-full border border-border px-7 py-4 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
+              Power Engineering Services: <span className="text-primary">backbone</span> of
+              Pakistan's energy.
+            </h1>
+            <p
+              className="mt-6 lg:mt-2.5 xl:mt-4 text-lg lg:text-[13px] xl:text-[15px] 2xl:text-base xl:leading-relaxed text-foreground/80 animate-rise"
+              style={{ animationDelay: "160ms" }}
             >
-              Our capabilities
-            </Link>
+              PES is a full-scope EPC and maintenance contractor for oil, gas and power operators.
+              We design, build, weld, inspect and turn around the assets that keep the grid running.
+            </p>
+            <div
+              className="mt-6 lg:mt-3.5 xl:mt-4.5 flex flex-wrap items-center gap-4 animate-rise"
+              style={{ animationDelay: "240ms" }}
+            >
+              <Link
+                to="/projects"
+                className="group inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground transition-all hover:scale-[1.02] hover:shadow-[0_0_40px_oklch(0.78_0.17_65/0.4)]"
+              >
+                Explore our portfolio
+                <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
+              </Link>
+              <Link
+                to="/services"
+                className="inline-flex items-center gap-3 rounded-full border border-border px-7 py-4 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
+              >
+                Our capabilities
+              </Link>
+            </div>
           </div>
 
-          <div className="mt-20 lg:mt-8 xl:mt-10 grid grid-cols-2 gap-x-8 gap-y-4 xl:gap-y-6 border-t border-border pt-8 lg:pt-4 xl:pt-6 sm:grid-cols-4">
+          <div className="mt-12 lg:mt-6 xl:mt-8 grid grid-cols-2 gap-x-8 gap-y-4 xl:gap-y-6 border-t border-border pt-6 lg:pt-3.5 xl:pt-5 sm:grid-cols-4">
             {[
               ["2010", "Established"],
-              ["54+", "Employees"],
-              ["50+", "Projects"],
+              ["200+", "Employees"],
+              ["100+", "Projects"],
               ["24/7", "Field Support"],
             ].map(([k, v]) => (
-              <div key={v}>
+              <div key={v} className="text-center">
                 <div className="font-display text-3xl font-bold text-foreground sm:text-4xl lg:text-xl xl:text-2xl 2xl:text-3xl">
                   {k}
                 </div>
@@ -160,7 +167,7 @@ function Index() {
                 — Scope of Activities
               </div>
               <h2 className="mt-4 max-w-2xl text-balance text-4xl font-bold sm:text-5xl">
-                Six disciplines. One contractor.
+                Nine disciplines. One contractor.
               </h2>
             </div>
             <p className="max-w-md text-muted-foreground">
@@ -195,13 +202,13 @@ function Index() {
           <div className="relative">
             <div className="sticky top-32">
               <div className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
-                — About PESC
+                — About PES
               </div>
               <h2 className="mt-4 text-balance text-4xl font-bold leading-[1.05] sm:text-5xl">
                 A service provider to the oil, gas and power industry.
               </h2>
               <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
-                PESC is one of Pakistan's leading engineering, procurement, construction and
+                PES is one of Pakistan's leading engineering, procurement, construction and
                 maintenance companies. We work with clients across diverse industries around the
                 country to design, build and maintain their capital projects.
               </p>
@@ -258,8 +265,7 @@ function Index() {
                 <div>
                   <div className="font-display text-6xl font-bold text-foreground">15+</div>
                   <div className="mt-3 text-sm text-muted-foreground">
-                    Years serving OGDCL, MPCL, Mari Petroleum, Engro, and PARCO across every
-                    province of Pakistan.
+                    Years serving MPCL, Mari Petroleum, and PARCO across every province of Pakistan.
                   </div>
                 </div>
               </div>

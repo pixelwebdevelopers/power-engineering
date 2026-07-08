@@ -7,13 +7,13 @@ export const Route = createFileRoute("/contact")({
   component: Contact,
   head: () => ({
     meta: [
-      { title: "Contact — PESC" },
+      { title: "Contact — PES" },
       {
         name: "description",
         content:
           "Talk to Power Engineering Services Company. Headquarters in Hyderabad, Pakistan. Phone +92 333 7151155 · info@powereng.com.pk",
       },
-      { property: "og:title", content: "Contact — PESC" },
+      { property: "og:title", content: "Contact — PES" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -28,8 +28,7 @@ function Contact() {
         eyebrow="Contact"
         title={
           <>
-            Send us the scope.{" "}
-            <span className="text-primary">We'll come back with a plan.</span>
+            Send us the scope. <span className="text-primary">We'll come back with a plan.</span>
           </>
         }
         description="Whether it's a single weld inspection or a full turnaround, our team responds within one business day."
@@ -101,18 +100,13 @@ function Contact() {
             <div className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
               — Request a proposal
             </div>
-            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-              Tell us about the project.
-            </h2>
+            <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Tell us about the project.</h2>
 
             {sent ? (
               <div className="mt-10 rounded-2xl border border-primary/30 bg-primary/10 p-6 text-center">
-                <div className="text-lg font-bold text-primary">
-                  Message received.
-                </div>
+                <div className="text-lg font-bold text-primary">Message received.</div>
                 <p className="mt-2 text-sm text-foreground/80">
-                  Thanks — a member of the PESC team will be in touch within
-                  one business day.
+                  Thanks — a member of the PES team will be in touch within one business day.
                 </p>
               </div>
             ) : (
@@ -125,7 +119,11 @@ function Contact() {
                   <Field label="Email" name="email" type="email" placeholder="you@company.com" />
                   <Field label="Phone" name="phone" placeholder="+92…" />
                 </div>
-                <Field label="Site / Location" name="site" placeholder="Zarghun, Sinjhoro, Karachi…" />
+                <Field
+                  label="Site / Location"
+                  name="site"
+                  placeholder="Zarghun, Sinjhoro, Karachi…"
+                />
                 <div>
                   <label className="mb-2 block font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
                     Scope of work

@@ -81,21 +81,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PESC — Power Engineering Services Company" },
+      { title: "PES — Power Engineering Services Company" },
       {
         name: "description",
         content:
           "Pakistan's leading EPC and maintenance company for Power, Energy and Oil & Gas. Fabrication, welding, construction, NDT and turnaround services since 2010.",
       },
       { name: "author", content: "Power Engineering Services Company" },
-      { property: "og:title", content: "PESC — Power Engineering Services Company" },
+      { property: "og:title", content: "PES — Power Engineering Services Company" },
       {
         property: "og:description",
         content:
           "EPC, fabrication, welding and maintenance for Pakistan's oil, gas and power sector.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "PESC" },
+      { property: "og:site_name", content: "PES" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

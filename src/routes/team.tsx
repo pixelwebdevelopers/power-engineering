@@ -11,13 +11,13 @@ export const Route = createFileRoute("/team")({
   component: Team,
   head: () => ({
     meta: [
-      { title: "Team — PESC" },
+      { title: "Team — PES" },
       {
         name: "description",
         content:
           "The management team leading Power Engineering Services Company — founder Abdul Khalique Mohsin and the site, engineering and administration leads.",
       },
-      { property: "og:title", content: "Team — PESC" },
+      { property: "og:title", content: "Team — PES" },
       { property: "og:url", content: "/team" },
     ],
     links: [{ rel: "canonical", href: "/team" }],
@@ -30,7 +30,7 @@ const TEAM = [
     role: "Founder / CEO",
     featured: true,
     image: abdulKhaliq,
-    desc: "Founded PESC in 2010 with a mandate to bring international-standard EPC delivery to Pakistan's oil, gas and power operators. Leads strategy, client relationships and safety culture across the business.",
+    desc: "Founded PES in 2010 with a mandate to bring international-standard EPC delivery to Pakistan's oil, gas and power operators. Leads strategy, client relationships and safety culture across the business.",
   },
   {
     name: "M. Fazal Yaseen",
@@ -82,8 +82,7 @@ function Team() {
         eyebrow="Our Team"
         title={
           <>
-            The management team behind every{" "}
-            <span className="text-primary">weld</span>,{" "}
+            The management team behind every <span className="text-primary">weld</span>,{" "}
             <span className="text-primary">turnaround</span> and site.
           </>
         }
@@ -93,13 +92,14 @@ function Team() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         {/* Founder */}
         <div className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-navy via-ink to-steel p-10 text-center sm:p-16">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 opacity-30"
-          />
+          <div aria-hidden className="pointer-events-none absolute inset-0 opacity-30" />
           <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-2 border-primary bg-primary shadow-lg">
             {ceo.image ? (
-              <img src={ceo.image} alt={ceo.name} className="h-full w-full object-cover object-top" />
+              <img
+                src={ceo.image}
+                alt={ceo.name}
+                className="h-full w-full object-cover object-top"
+              />
             ) : (
               <div className="grid h-full w-full place-items-center font-display text-4xl font-bold text-primary-foreground">
                 {initials(ceo.name)}
@@ -110,9 +110,7 @@ function Team() {
             — {ceo.role}
           </div>
           <h2 className="mt-3 text-4xl font-bold sm:text-5xl">{ceo.name}</h2>
-          <p className="mx-auto mt-6 max-w-lg text-muted-foreground">
-            {ceo.desc}
-          </p>
+          <p className="mx-auto mt-6 max-w-lg text-muted-foreground">{ceo.desc}</p>
         </div>
 
         {/* Rest */}
@@ -124,7 +122,11 @@ function Team() {
             >
               <div className="h-20 w-20 overflow-hidden rounded-2xl bg-secondary border border-border">
                 {m.image ? (
-                  <img src={m.image} alt={m.name} className="h-full w-full object-cover object-top" />
+                  <img
+                    src={m.image}
+                    alt={m.name}
+                    className="h-full w-full object-cover object-top"
+                  />
                 ) : (
                   <div className="grid h-full w-full place-items-center font-display text-2xl font-bold text-primary">
                     {initials(m.name)}
@@ -135,9 +137,7 @@ function Team() {
               <div className="mt-2 font-mono text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
                 {m.role}
               </div>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                {m.desc}
-              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{m.desc}</p>
               <div className="pointer-events-none absolute -right-6 -top-6 h-24 w-24 rounded-full bg-primary/10 opacity-0 blur-2xl transition-opacity group-hover:opacity-100" />
             </div>
           ))}

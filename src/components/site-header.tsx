@@ -41,7 +41,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-6">
         <Link to="/" className="flex shrink-0 items-center gap-3">
-          <img src={logoUrl} alt="PESC" className="h-11 w-auto" />
+          <img src={logoUrl} alt="PES" className="h-11 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
@@ -86,11 +86,14 @@ export function SiteHeader() {
               <Menu className="h-6 w-6" />
             </button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[350px] border-l border-border bg-background/95 backdrop-blur-md p-6 flex flex-col justify-between">
+          <SheetContent
+            side="right"
+            className="w-[300px] sm:w-[350px] border-l border-border bg-background/95 backdrop-blur-md p-6 flex flex-col justify-between"
+          >
             <div>
               <SheetHeader className="flex flex-row items-center justify-between border-b border-border pb-4">
                 <SheetTitle>
-                  <img src={logoUrl} alt="PESC" className="h-9 w-auto" />
+                  <img src={logoUrl} alt="PES" className="h-9 w-auto" />
                 </SheetTitle>
               </SheetHeader>
               <nav className="mt-8 flex flex-col gap-1">
@@ -100,7 +103,9 @@ export function SiteHeader() {
                       to={n.to}
                       activeOptions={{ exact: n.to === "/" }}
                       activeProps={{ className: "bg-secondary text-primary" }}
-                      inactiveProps={{ className: "text-foreground/80 hover:text-foreground hover:bg-accent/50" }}
+                      inactiveProps={{
+                        className: "text-foreground/80 hover:text-foreground hover:bg-accent/50",
+                      }}
                       className="rounded-xl px-4 py-3 text-base font-semibold transition-colors"
                     >
                       {n.label}

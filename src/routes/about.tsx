@@ -12,16 +12,23 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "PESC is Pakistan's leading EPC and maintenance company for oil, gas and power operators. Founded 2010, headquartered in Hyderabad.",
+          "PES is Pakistan's leading EPC and maintenance company for oil, gas and power operators. Founded 2010, headquartered in Hyderabad.",
       },
-      { property: "og:title", content: "About PESC" },
+      { property: "og:title", content: "About PES" },
       { property: "og:url", content: "/about" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
 });
 
-const CLIENTS = ["OGDCL", "Mari Petroleum", "MPCL", "Engro Corp", "PARCO"];
+const CLIENTS = [
+  "PARCO",
+  "Mari Petroleum",
+  "MPCL",
+  "Tando Alam Field",
+  "Sinjhoro",
+  "Bobi Oil Complex",
+];
 
 const PRINCIPLES = [
   {
@@ -52,7 +59,7 @@ function About() {
             <span className="text-primary">construction</span>.
           </>
         }
-        description="PESC is a service provider to Pakistan's oil, gas and power industry. We design, build, operate and maintain oil & gas facilities with a reputation for commitment, delivery and operational excellence."
+        description="PES is a service provider to Pakistan's oil, gas and power industry. We design, build, operate and maintain oil & gas facilities with a reputation for commitment, delivery and operational excellence."
       />
 
       {/* Company overview */}
@@ -73,7 +80,7 @@ function About() {
                 and commissioning for project owners and operators.
               </p>
               <p>
-                PESC was established in 2010 and is owned by Abdul Khalique Mohsin. It is
+                PES was established in 2010 and is owned by Abdul Khalique Mohsin. It is
                 headquartered in Hyderabad and operates all across Pakistan.
               </p>
               <p>
@@ -95,9 +102,9 @@ function About() {
             <div className="grid grid-cols-2 gap-6 border-b border-border pb-10">
               {[
                 ["2010", "Established"],
-                ["54", "Employees"],
-                ["50+", "Projects"],
-                ["6", "Core disciplines"],
+                ["200+", "Employees"],
+                ["100+", "Projects"],
+                ["9", "Core disciplines"],
               ].map(([k, v]) => (
                 <div key={v}>
                   <div className="font-display text-5xl font-bold">{k}</div>
