@@ -81,8 +81,8 @@ export function SiteFooter() {
               </li>
               <li className="flex gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <a href="mailto:info@pesc.pk" className="hover:text-primary">
-                  info@pesc.pk
+                <a href="mailto:info@powereng.com.pk" className="hover:text-primary">
+                  info@powereng.com.pk
                 </a>
               </li>
             </ul>

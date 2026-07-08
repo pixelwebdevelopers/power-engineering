@@ -50,7 +50,6 @@ const CLIENTS = [
   "MPCL",
   "Engro Corp",
   "PARCO",
-  "Joint Engineering Services",
   "Bobi Oil Complex",
   "Sujawal Gas Field",
 ];
@@ -65,7 +64,7 @@ const FEATURED_PROJECTS = [
   {
     tag: "MPCL · Zarghun",
     title: "Well Head Pipeline Fabrication",
-    body: "Fabrication, welding and erection of 2\", 6\" and 8\" Duplex (2205) pipeline for wellheads ZS1 and ZS2 at Zarghun Gas Field.",
+    body: 'Fabrication, welding and erection of 2", 6" and 8" Duplex (2205) pipeline for wellheads ZS1 and ZS2 at Zarghun Gas Field.',
     image: projectWellhead,
   },
   {
@@ -103,17 +102,15 @@ function Index() {
             className="mt-6 lg:mt-4 max-w-5xl text-balance text-5xl font-bold leading-[1.0] tracking-tight sm:text-7xl lg:text-[3.6rem] xl:text-[4.8rem] 2xl:text-[5.5rem] xl:leading-[0.95] animate-rise"
             style={{ animationDelay: "80ms" }}
           >
-            Engineering the{" "}
-            <span className="text-primary">backbone</span> of Pakistan's
-            energy sector.
+            Engineering the <span className="text-primary">backbone</span> of Pakistan's energy
+            sector.
           </h1>
           <p
             className="mt-8 lg:mt-3 xl:mt-5 max-w-2xl text-lg lg:text-xs xl:text-sm 2xl:text-base xl:leading-relaxed text-foreground/80 animate-rise"
             style={{ animationDelay: "160ms" }}
           >
-            PESC is a full-scope EPC and maintenance contractor for oil, gas
-            and power operators. We design, build, weld, inspect and turn
-            around the assets that keep the grid running.
+            PESC is a full-scope EPC and maintenance contractor for oil, gas and power operators. We
+            design, build, weld, inspect and turn around the assets that keep the grid running.
           </p>
           <div
             className="mt-10 lg:mt-4 xl:mt-6 flex flex-wrap items-center gap-4 animate-rise"
@@ -167,8 +164,8 @@ function Index() {
               </h2>
             </div>
             <p className="max-w-md text-muted-foreground">
-              From a single weld to an entire annual turnaround — everything
-              stays under one roof, one QA system, one point of accountability.
+              From a single weld to an entire annual turnaround — everything stays under one roof,
+              one QA system, one point of accountability.
             </p>
           </div>
 
@@ -204,15 +201,14 @@ function Index() {
                 A service provider to the oil, gas and power industry.
               </h2>
               <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
-                PESC is one of Pakistan's leading engineering, procurement,
-                construction and maintenance companies. We work with clients
-                across diverse industries around the country to design, build
-                and maintain their capital projects.
+                PESC is one of Pakistan's leading engineering, procurement, construction and
+                maintenance companies. We work with clients across diverse industries around the
+                country to design, build and maintain their capital projects.
               </p>
               <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                Founded in 2010 by Abdul Khalique Mohsin and headquartered in
-                Hyderabad, we operate throughout Pakistan with a reputation
-                for commitment, delivery and operational excellence.
+                Founded in 2010 by Abdul Khalique Mohsin and headquartered in Hyderabad, we operate
+                throughout Pakistan with a reputation for commitment, delivery and operational
+                excellence.
               </p>
               <Link
                 to="/about"
@@ -260,12 +256,10 @@ function Index() {
                   Since 2010
                 </div>
                 <div>
-                  <div className="font-display text-6xl font-bold text-foreground">
-                    15+
-                  </div>
+                  <div className="font-display text-6xl font-bold text-foreground">15+</div>
                   <div className="mt-3 text-sm text-muted-foreground">
-                    Years serving OGDCL, MPCL, Mari Petroleum, Engro, PARCO and
-                    Joint Engineering Services across every province of Pakistan.
+                    Years serving OGDCL, MPCL, Mari Petroleum, Engro, and PARCO across every
+                    province of Pakistan.
                   </div>
                 </div>
               </div>
@@ -343,9 +337,7 @@ function Index() {
                   {p.tag}
                 </div>
                 <h3 className="mt-3 text-xl font-bold sm:text-2xl">{p.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  {p.body}
-                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
               </div>
             </article>
           ))}

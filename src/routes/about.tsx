@@ -21,14 +21,7 @@ export const Route = createFileRoute("/about")({
   }),
 });
 
-const CLIENTS = [
-  "OGDCL",
-  "Mari Petroleum",
-  "MPCL",
-  "Engro Corp",
-  "PARCO",
-  "Joint Engineering Services",
-];
+const CLIENTS = ["OGDCL", "Mari Petroleum", "MPCL", "Engro Corp", "PARCO"];
 
 const PRINCIPLES = [
   {
@@ -55,8 +48,7 @@ function About() {
         eyebrow="About Us"
         title={
           <>
-            One partner for engineering,{" "}
-            <span className="text-primary">procurement</span> and{" "}
+            One partner for engineering, <span className="text-primary">procurement</span> and{" "}
             <span className="text-primary">construction</span>.
           </>
         }
@@ -71,27 +63,23 @@ function About() {
               — Company Overview
             </div>
             <h2 className="mt-4 text-4xl font-bold leading-[1.1] sm:text-5xl">
-              Total engineering solutions for the power and hydrocarbon
-              sector.
+              Total engineering solutions for the power and hydrocarbon sector.
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Power Engineering Services Company is an engineering,
-                procurement and construction company providing total solutions
-                to the Power, Energy and Oil & Gas sector. Our scope covers
-                engineering, procurement, project management, fabrication,
-                installation and commissioning for project owners and
-                operators.
+                Power Engineering Services Company is an engineering, procurement and construction
+                company providing total solutions to the Power, Energy and Oil & Gas sector. Our
+                scope covers engineering, procurement, project management, fabrication, installation
+                and commissioning for project owners and operators.
               </p>
               <p>
-                PESC was established in 2010 and is owned by Abdul Khalique
-                Mohsin. It is headquartered in Hyderabad and operates all
-                across Pakistan.
+                PESC was established in 2010 and is owned by Abdul Khalique Mohsin. It is
+                headquartered in Hyderabad and operates all across Pakistan.
               </p>
               <p>
-                Our teams design and build oil & gas infrastructure, operate
-                and maintain live assets, and train personnel to competency
-                and assurance frameworks agreed with each client.
+                Our teams design and build oil & gas infrastructure, operate and maintain live
+                assets, and train personnel to competency and assurance frameworks agreed with each
+                client.
               </p>
             </div>
             <Link
@@ -128,9 +116,7 @@ function About() {
                 <div className="font-mono text-xs text-primary">{p.n}</div>
                 <div>
                   <h3 className="text-lg font-bold">{p.t}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {p.d}
-                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.d}</p>
                 </div>
               </div>
             ))}
@@ -152,8 +138,8 @@ function About() {
         <div className="absolute inset-0 flex items-center">
           <div className="mx-auto w-full max-w-7xl px-6">
             <p className="max-w-3xl text-balance text-3xl font-bold leading-[1.15] sm:text-5xl">
-              “We respond to each client's needs — helping them transform the
-              value of their assets across the oil and gas life cycle.”
+              “We respond to each client's needs — helping them transform the value of their assets
+              across the oil and gas life cycle.”
             </p>
           </div>
         </div>
@@ -170,9 +156,8 @@ function About() {
               A track record with the operators who move Pakistan's energy.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              National oil & gas majors, upstream operators, EPC integrators
-              and refiners — long-term partners who return contract after
-              contract.
+              National oil & gas majors, upstream operators, EPC integrators and refiners —
+              long-term partners who return contract after contract.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-3">

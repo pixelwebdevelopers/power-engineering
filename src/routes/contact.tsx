@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Talk to Power Engineering Services Company. Headquarters in Hyderabad, Pakistan. Phone +92 333 7151155 · info@pesc.pk",
+          "Talk to Power Engineering Services Company. Headquarters in Hyderabad, Pakistan. Phone +92 333 7151155 · info@powereng.com.pk",
       },
       { property: "og:title", content: "Contact — PESC" },
       { property: "og:url", content: "/contact" },
@@ -54,8 +54,8 @@ function Contact() {
               {
                 icon: Mail,
                 title: "Email",
-                lines: ["info@pesc.pk"],
-                href: "mailto:info@pesc.pk",
+                lines: ["info@powereng.com.pk"],
+                href: "mailto:info@powereng.com.pk",
               },
               {
                 icon: Clock,
