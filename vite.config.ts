@@ -15,7 +15,7 @@ export default defineConfig(({ command }) => ({
     tailwindcss(),
     command === "build"
       ? nitro({
-          preset: "vercel",
+          preset: process.env.NITRO_PRESET || (process.env.VERCEL ? "vercel" : "node-server"),
         })
       : null,
   ].filter(Boolean),
