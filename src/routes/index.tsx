@@ -126,7 +126,7 @@ function Index() {
               className="mt-4 lg:mt-3 text-balance text-5xl font-bold leading-[1.0] tracking-tight sm:text-7xl lg:text-[2.8rem] xl:text-[3.8rem] 2xl:text-[4.5rem] xl:leading-[0.95] animate-rise"
               style={{ animationDelay: "80ms" }}
             >
-              Power Engineering Services: <span className="text-primary">backbone</span> of
+              Power Engineering Services SMC PVT LTD: <span className="text-primary">backbone</span> of
               Pakistan's energy.
             </h1>
             <p
