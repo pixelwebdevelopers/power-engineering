@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import {
   ArrowUpRight,
   Flame,
@@ -14,6 +15,8 @@ import {
   Phone,
 } from "lucide-react";
 import heroRefinery from "@/assets/hero-refinery.jpg";
+import heroPowerPlant from "@/assets/hero-power-plant.png";
+import heroPipeline from "@/assets/hero-pipeline.png";
 import serviceWelding from "@/assets/service-welding.jpg";
 import serviceMaintenance from "@/assets/service-maintenance.jpg";
 import serviceConstruction from "@/assets/service-construction.jpg";
@@ -81,18 +84,33 @@ const FEATURED_PROJECTS = [
 ];
 
 function Index() {
+  const heroImages = [heroRefinery, heroPowerPlant, heroPipeline];
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
       {/* HERO */}
       <section className="relative overflow-hidden lg:h-[calc(100vh-5rem)] lg:max-h-[calc(100vh-5rem)] lg:min-h-[580px]">
-        <div className="absolute inset-0">
-          <img
-            src={heroRefinery}
-            alt="Petrochemical refinery at blue hour"
-            width={1920}
-            height={1200}
-            className="h-full w-full object-cover"
-          />
+        <div className="absolute inset-0 bg-background">
+          {heroImages.map((src, i) => (
+            <img
+              key={src}
+              src={src}
+              alt="Industrial Plant"
+              width={1920}
+              height={1200}
+              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+                activeImageIndex === i ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent" />
         </div>

@@ -24,8 +24,7 @@ export const Route = createFileRoute("/about")({
 const CLIENTS = [
   "OGDCL",
   "PARCO",
-  "Mari Petroleum",
-  "MPCL",
+  "MARI Energies Limited",
 ];
 
 const PRINCIPLES = [
