@@ -41,7 +41,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-6">
         <Link to="/" className="flex shrink-0 items-center gap-3">
-          <img src={logoUrl} alt="PES" className="h-11 w-auto" />
+          <img src={logoUrl} alt="PES" className="h-14 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
@@ -93,7 +93,7 @@ export function SiteHeader() {
             <div>
               <SheetHeader className="flex flex-row items-center justify-between border-b border-border pb-4">
                 <SheetTitle>
-                  <img src={logoUrl} alt="PES" className="h-9 w-auto" />
+                  <img src={logoUrl} alt="PES" className="h-11 w-auto" />
                 </SheetTitle>
               </SheetHeader>
               <nav className="mt-8 flex flex-col gap-1">
