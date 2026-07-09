@@ -126,6 +126,21 @@ const INDUSTRIES = [
   { icon: Cpu, name: "Plastics & Composites", d: "Process piping and structural composite work." },
   { icon: Package, name: "Packaging & Plastics", d: "Utility, cleanroom and support services." },
   { icon: Building2, name: "Construction", d: "Industrial civil, warehousing and shed erection." },
+  {
+    icon: Building2,
+    name: "Civil Construction & Works",
+    d: "Foundations, structural concrete, and heavy equipment civil pads.",
+  },
+  {
+    icon: Zap,
+    name: "Electrical Works",
+    d: "Substation installation, power distribution, and industrial cabling.",
+  },
+  {
+    icon: Cpu,
+    name: "Instrumentation & Testing",
+    d: "Calibration, loop testing, control valves, and automation systems.",
+  },
 ];
 
 function Services() {
@@ -139,7 +154,7 @@ function Services() {
             diverse industries.
           </>
         }
-        description="Power Engineering Services Company delivers capital efficiency and project certainty across the full asset life cycle — from concept through commissioning through the next turnaround."
+        description="Power Engineering Services SMC PVT LTD delivers capital efficiency and project certainty across the full asset life cycle — from concept through commissioning through the next turnaround."
       />
 
       {/* Main services grid */}

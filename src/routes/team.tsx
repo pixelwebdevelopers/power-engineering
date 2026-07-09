@@ -15,7 +15,7 @@ export const Route = createFileRoute("/team")({
       {
         name: "description",
         content:
-          "The management team leading Power Engineering Services Company — founder Abdul Khalique Mohsin and the site, engineering and administration leads.",
+          "The management team leading Power Engineering Services SMC PVT LTD — founder Abdul Khalique Mohsin and the site, engineering and administration leads.",
       },
       { property: "og:title", content: "Team — PES" },
       { property: "og:url", content: "/team" },

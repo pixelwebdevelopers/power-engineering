@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({
     meta: [
-      { title: "About — Power Engineering Services Company" },
+      { title: "About — Power Engineering Services SMC PVT LTD" },
       {
         name: "description",
         content:
@@ -22,12 +22,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const CLIENTS = [
+  "OGDCL",
   "PARCO",
   "Mari Petroleum",
   "MPCL",
-  "Tando Alam Field",
-  "Sinjhoro",
-  "Bobi Oil Complex",
 ];
 
 const PRINCIPLES = [
@@ -74,7 +72,7 @@ function About() {
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Power Engineering Services Company is an engineering, procurement and construction
+                Power Engineering Services SMC PVT LTD is an engineering, procurement and construction
                 company providing total solutions to the Power, Energy and Oil & Gas sector. Our
                 scope covers engineering, procurement, project management, fabrication, installation
                 and commissioning for project owners and operators.

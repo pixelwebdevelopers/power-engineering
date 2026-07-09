@@ -11,7 +11,7 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Talk to Power Engineering Services Company. Headquarters in Hyderabad, Pakistan. Phone +92 333 7151155 · info@powereng.com.pk",
+          "Talk to Power Engineering Services SMC PVT LTD. Headquarters in Hyderabad, Pakistan. Phone +92 333 7151155 · info@powereng.com.pk",
       },
       { property: "og:title", content: "Contact — PES" },
       { property: "og:url", content: "/contact" },
@@ -42,7 +42,7 @@ function Contact() {
               {
                 icon: MapPin,
                 title: "Headquarters",
-                lines: ["Ground Floor, A-8, Mohammed-e-Town", "Qasimabad, Hyderabad, Pakistan"],
+                lines: ["Mezzanine Floor G -1059/78, Wishan Nagar", "Phuleli Road, Haydrabad, Pakistan"],
               },
               {
                 icon: Phone,

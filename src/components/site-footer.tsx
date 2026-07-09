@@ -64,9 +64,9 @@ export function SiteFooter() {
               <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <span>
-                  Ground Floor, A-8, Mohammed-e-Town,
+                  Mezzanine Floor G -1059/78, Wishan Nagar,
                   <br />
-                  Qasimabad, Hyderabad, Pakistan
+                  Phuleli Road, Haydrabad, Pakistan
                 </span>
               </li>
               <li className="flex gap-3">

@@ -20,6 +20,9 @@ import serviceConstruction from "@/assets/service-construction.jpg";
 import projectOutage from "@/assets/project-outage.jpg";
 import projectPipeline from "@/assets/project-pipeline.jpg";
 import projectWellhead from "@/assets/project-wellhead.jpg";
+import clientLogo2 from "@/assets/clients-logo/2.png";
+import clientLogo3 from "@/assets/clients-logo/3.png";
+import clientLogo4 from "@/assets/clients-logo/4.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -29,7 +32,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Power Engineering Services Company delivers EPC, fabrication, welding, construction and maintenance for oil, gas and power operators across Pakistan.",
+          "Power Engineering Services SMC PVT LTD delivers EPC, fabrication, welding, construction and maintenance for oil, gas and power operators across Pakistan.",
       },
       { property: "og:title", content: "PES — Engineering Pakistan's energy backbone" },
       { property: "og:url", content: "/" },
@@ -50,18 +53,15 @@ const CAPABILITIES = [
   { icon: Cpu, name: "Instrumentation & Testing", href: "/services" },
 ];
 
-const CLIENTS = [
-  "PARCO",
-  "Mari Petroleum",
-  "MPCL",
-  "Tando Alam Field",
-  "Sinjhoro",
-  "Bobi Oil Complex",
+const CLIENT_LOGOS = [
+  clientLogo2,
+  clientLogo3,
+  clientLogo4,
 ];
 
 const FEATURED_PROJECTS = [
   {
-    tag: "Sinjhoro",
+    tag: "OGDCL",
     title: "Plant Outage — ATA 2019",
     body: "Successfully executed annual turn-around covering maintenance and up-gradation of aged equipment across the Sinjhoro Gas Condensate Field.",
     image: projectOutage,
@@ -73,7 +73,7 @@ const FEATURED_PROJECTS = [
     image: projectWellhead,
   },
   {
-    tag: "JES (Pvt) Ltd",
+    tag: "MARI ENERGIES LIMITED",
     title: "Multi-Unit Piping Works",
     body: "Construction and erection of plant piping across Dehydration, Amine Sweetening, LPG Bullets, HCDPU, Metering Skids and Flare Stack systems.",
     image: projectPipeline,
@@ -265,7 +265,7 @@ function Index() {
                 <div>
                   <div className="font-display text-6xl font-bold text-foreground">15+</div>
                   <div className="mt-3 text-sm text-muted-foreground">
-                    Years serving MPCL, Mari Petroleum, and PARCO across every province of Pakistan.
+                    Years serving GDCL, PARCO, MARI ENERGIES LIMITED across every province of Pakistan.
                   </div>
                 </div>
               </div>
@@ -282,14 +282,21 @@ function Index() {
           </div>
         </div>
         <div className="relative mt-10 flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
-          <div className="flex shrink-0 animate-marquee gap-16 px-8">
-            {[...CLIENTS, ...CLIENTS].map((c, i) => (
-              <span
+          <div className="flex shrink-0 animate-marquee items-center gap-24 px-12">
+            {[
+              ...CLIENT_LOGOS,
+              ...CLIENT_LOGOS,
+              ...CLIENT_LOGOS,
+              ...CLIENT_LOGOS,
+              ...CLIENT_LOGOS,
+              ...CLIENT_LOGOS,
+            ].map((logo, i) => (
+              <img
                 key={i}
-                className="whitespace-nowrap font-display text-2xl font-bold text-foreground/50 hover:text-primary transition-colors"
-              >
-                {c}
-              </span>
+                src={logo}
+                alt="Client Logo"
+                className="h-14 md:h-18 w-auto object-contain"
+              />
             ))}
           </div>
         </div>
@@ -310,7 +317,7 @@ function Index() {
             to="/projects"
             className="group inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.3em] text-primary"
           >
-            All 50+ projects
+            All 100+ projects
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
           </Link>
         </div>

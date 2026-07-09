@@ -11,7 +11,7 @@ export const Route = createFileRoute("/projects")({
       {
         name: "description",
         content:
-          "Completed EPC, fabrication and turnaround projects delivered by Power Engineering Services Company for OGDCL, MPCL, Mari Petroleum and PARCO.",
+          "Completed EPC, fabrication and turnaround projects delivered by Power Engineering Services SMC PVT LTD for OGDCL, MPCL, Mari Petroleum and PARCO.",
       },
       { property: "og:title", content: "Projects — PES" },
       { property: "og:url", content: "/projects" },
@@ -32,7 +32,7 @@ type Project = {
 const PROJECTS: Project[] = [
   {
     no: "102",
-    client: "",
+    client: "OGDCL",
     year: "2026",
     name: "Separator Piping Installation",
     desc: "Welding fabrication and installation services for Separator piping for Sahito-1 & Bitrism East-1 wells at Sinjhoro Gas Plant",
@@ -40,7 +40,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "101",
-    client: "",
+    client: "OGDCL",
     year: "2026",
     name: "Interconnecting Piping Services",
     desc: "Welding fabrication and installation services for interconnecting piping for integration of additional Membrane Bank and coalescer filter vessel Fc-2661 at Sinjhoro Gas Plant",
@@ -48,7 +48,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "100",
-    client: "",
+    client: "OGDCL",
     year: "2026",
     name: 'Pipeline Laying 6"x5 KM',
     desc: 'Pipeline Laying 6"x5 KM from Sahito-1 to Suleman Gathering Facility',
@@ -64,7 +64,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "98",
-    client: "",
+    client: "OGDCL",
     year: "2026",
     name: "Manpower Services (Tando Alam)",
     desc: "Hiring Of Manpower Services for Tando Alam Complex at TOC Field",
@@ -72,7 +72,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "97",
-    client: "",
+    client: "OGDCL",
     year: "2026",
     name: "Manpower Services (Kunnar KPD)",
     desc: "Hiring Of Manpower Services for Kunnar KPD Tat Field",
@@ -88,7 +88,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "95",
-    client: "",
+    client: "OGDCL",
     year: "2025",
     name: "Gun Barrel Tank Cleaning",
     desc: "Cleaning For Gun Barrel Tank # 1 (6000 BBLs capacity) at Lashari Center Facility Tando Alam Field",
@@ -96,7 +96,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "93",
-    client: "",
+    client: "OGDCL",
     year: "2025",
     name: "Permeate Header Capacity Enhancement",
     desc: "Services for permeate Header capacity Enhancement fabrication welding piping Sinjhoro field",
@@ -184,7 +184,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "82",
-    client: "",
+    client: "OGDCL",
     year: "2024",
     name: "Pipeline Repair Job",
     desc: 'Welding fabrication plant repair job 6"pipeline at Sinjhoro Field',
@@ -192,7 +192,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "81",
-    client: "",
+    client: "OGDCL",
     year: "2024",
     name: "Tank Cleaning & Dismantling",
     desc: "Tank cleaning Dismantling Cutting Complete tank at Tando Alam TOC Field",
@@ -200,7 +200,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "80",
-    client: "",
+    client: "OGDCL",
     year: "2024",
     name: "Sandblasting & FRP Coating",
     desc: "Services for sand blasting and FRP coating tank at Tando Alam TOC Field",
@@ -216,7 +216,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "78",
-    client: "",
+    client: "OGDCL",
     year: "2024",
     name: "Zero Flare Line Installation",
     desc: "Welding fabrication and installation of zero flair line at Sinjhoro plant",
@@ -224,7 +224,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "77",
-    client: "",
+    client: "OGDCL",
     year: "2023",
     name: "Piping Spools Fabrication",
     desc: "Welding & Fabrication of Piping Spools For SINJHORO-BOBI Gas Transfer Project",
@@ -232,15 +232,15 @@ const PROJECTS: Project[] = [
   },
   {
     no: "76",
-    client: "",
+    client: "OGDCL",
     year: "2023",
-    name: "Pipeline Laying 4inch x 11.7 km",
+    name: "Pipeline & Well Head Assembly",
     desc: "Fabrication Welding & Installation of Remaining Pipeline, Well Head Assembly and Piping work for Sanghar X-1 at Singhoro Plant",
     tag: "Pipeline",
   },
   {
     no: "75",
-    client: "Tando Alam Field",
+    client: "OGDCL",
     year: "2023",
     name: "Fire Tube Fabrication",
     desc: "Fabrication & Welding of Fire Tube-A, U-Type for Desalter Unit-B",
@@ -248,7 +248,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "74",
-    client: "",
+    client: "OGDCL",
     year: "2023",
     name: "Companion Flange Replacement",
     desc: "Replacement of Damaged Companion Flange of WHA L-Spool of Hakim Dhaio-02 well at sinjhoro Gas Filed",
@@ -256,7 +256,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "73",
-    client: "",
+    client: "OGDCL",
     year: "2023",
     name: "WHA Fabrication & Installation",
     desc: "Fabrication, Welding & Installation works for WHA of Chak Dim-5 South # 3 at Bobi Gas Filed",
@@ -264,7 +264,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "72",
-    client: "",
+    client: "OGDCL",
     year: "2023",
     name: "Well Line Piping Laying",
     desc: "Fabrication, Welding works for Laying of Chak Dim-5 South#3 at Bobi Gas Filed",
@@ -272,7 +272,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "71",
-    client: "",
+    client: "OGDCL",
     year: "2023",
     name: "Knockout Vessels Fabrication",
     desc: "Fabrication, Welding works for 04 Nos, Knockout Vessels for Upcoming wells at Sinjhoro Gas Field",
@@ -432,7 +432,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "51",
-    client: "",
+    client: "OGDCL",
     year: "2022",
     name: "Water Bath Heater Gas/Coil Fabrication",
     desc: "Fabrication of New Gas/Coil of Water Bath Heater",
@@ -440,7 +440,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "50",
-    client: "",
+    client: "OGDCL",
     year: "2022",
     name: "Water Bath Heater Welding & Repair",
     desc: "Gasket preparation, Installation and welding repair job of nozzle of Water Bath Heater",
@@ -592,7 +592,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "31",
-    client: "",
+    client: "OGDCL",
     year: "2022",
     name: "Flow Line Erection (Metharo #1)",
     desc: 'Fabrication, construction & Erection for preparation connection with existing flow line 6" Dia sch 80 of Metharo well # 1 for Chak dhim #5 at BOC field',
@@ -600,23 +600,23 @@ const PROJECTS: Project[] = [
   },
   {
     no: "30",
-    client: "",
+    client: "OGDCL",
     year: "2022",
-    name: "Wellhead Assembly Connection (Lala Jamali #2)",
-    desc: 'Fabrication construction erection for preparation connection wellhead assembly 4" Dia flow line Lala jamali #2 at sinjhoro field',
+    name: "Pipeline Laying & Well Head Assembly (Lala Jamali #2)",
+    desc: 'Pipeline Laying 4" x 1.6 KM & Well Head Assembly Lala Jamali #2',
     tag: "Pipeline",
   },
   {
     no: "29",
-    client: "",
+    client: "OGDCL",
     year: "2022",
-    name: "Well Head Assembly Connection (Chak Dhim)",
-    desc: 'Fabrication construction erection for preparation connection well head assembly 6" Dia flow line Chak dhim #2 and chack dhim #3 connected at BOC field OGDCL',
+    name: "Pipeline Laying (Chak Dhim to Bobi)",
+    desc: 'Pipeline Laying 6" x 1.3 KM from Chak Dhim to Bobi',
     tag: "Pipeline",
   },
   {
     no: "28",
-    client: "",
+    client: "OGDCL",
     year: "2022",
     name: "Piping Hydrotesting & Erection",
     desc: "Cutting, welding, Fabrication, of 14-inch sch 80 pipe, Hydrotesting Erection/Installation of cold work Joints.",
@@ -624,7 +624,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "08",
-    client: "Sinjhoro",
+    client: "OGDCL",
     year: "2019",
     name: "Plant Outage 2019",
     desc: "Sinjhoro ATA 2019 covering maintenance and up-gradation of aged plant equipment.",
@@ -632,7 +632,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "07",
-    client: "Sinjhoro",
+    client: "OGDCL",
     year: "2019",
     name: "Jhakro Flareline",
     desc: 'Fabrication, welding & erection of Jhakro Flareline 4" and 6" including hydro testing, flashing, air blowing and radiography at Sinjhoro Gas Condensate Field.',
@@ -647,16 +647,8 @@ const PROJECTS: Project[] = [
     tag: "Construction",
   },
   {
-    no: "05",
-    client: "Mari Petroleum Company",
-    year: "2017",
-    name: "Plant Outage 2017",
-    desc: "Mechanical contractor during ATA 2017 at Sujawal Gas Condensate Field.",
-    tag: "Turnaround",
-  },
-  {
     no: "04",
-    client: "Sinjhoro",
+    client: "OGDCL",
     year: "2016",
     name: "Membrane Unit Installation",
     desc: 'Installation of Membrane Skid, Coalescer Filter and Fin Fan Cooler. Fabrication, welding & erection of 2", 4", 6", 8" and 10" pipelines including hydro, flashing, air blowing and radiography.',
@@ -664,7 +656,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "03",
-    client: "Bobi Oil Complex",
+    client: "OGDCL",
     year: "2016",
     name: "Plant Outage 2016",
     desc: "Mechanical contractor for maintenance of plant during Annual Turn Around 2016 at Bobi Oil Complex.",
@@ -672,7 +664,7 @@ const PROJECTS: Project[] = [
   },
   {
     no: "02",
-    client: "Sinjhoro",
+    client: "OGDCL",
     year: "2016",
     name: "Plant Outage 2016",
     desc: "Served as mechanical contractor for Annual Turn Around 2016 at Sinjhoro Gas Condensate Field, OGDCL.",
@@ -680,13 +672,16 @@ const PROJECTS: Project[] = [
   },
   {
     no: "01",
-    client: "Sinjhoro",
+    client: "OGDCL",
     year: "2015",
     name: "Plant Outage",
     desc: "PES successfully completed Sinjhoro ATA 2015 covering maintenance and up-gradation of aged plant equipment.",
     tag: "Turnaround",
   },
-];
+].map((p, index, arr) => ({
+  ...p,
+  no: String(arr.length - index).padStart(2, "0"),
+}));
 
 const TAGS = ["All", "Turnaround", "Fabrication", "Pipeline", "Construction"] as const;
 
