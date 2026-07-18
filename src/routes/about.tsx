@@ -21,11 +21,7 @@ export const Route = createFileRoute("/about")({
   }),
 });
 
-const CLIENTS = [
-  "OGDCL",
-  "PARCO",
-  "MARI Energies Limited",
-];
+const CLIENTS = ["OGDCL", "PARCO", "MARI Energies Limited"];
 
 const PRINCIPLES = [
   {
@@ -71,10 +67,10 @@ function About() {
             </h2>
             <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Power Engineering Services SMC PVT LTD is an engineering, procurement and construction
-                company providing total solutions to the Power, Energy and Oil & Gas sector. Our
-                scope covers engineering, procurement, project management, fabrication, installation
-                and commissioning for project owners and operators.
+                Power Engineering Services SMC PVT LTD is an engineering, procurement and
+                construction company providing total solutions to the Power, Energy and Oil & Gas
+                sector. Our scope covers engineering, procurement, project management, fabrication,
+                installation and commissioning for project owners and operators.
               </p>
               <p>
                 PES was established in 2010 and is owned by Abdul Khalique Mohsin. It is

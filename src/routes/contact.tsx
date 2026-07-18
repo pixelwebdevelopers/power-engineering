@@ -42,7 +42,10 @@ function Contact() {
               {
                 icon: MapPin,
                 title: "Headquarters",
-                lines: ["Mezzanine Floor G -1059/78, Wishan Nagar", "Phuleli Road, Haydrabad, Pakistan"],
+                lines: [
+                  "Mezzanine Floor G -1059/78, Wishan Nagar",
+                  "Phuleli Road, Haydrabad, Pakistan",
+                ],
               },
               {
                 icon: Phone,

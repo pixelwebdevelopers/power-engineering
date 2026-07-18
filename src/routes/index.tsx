@@ -56,11 +56,7 @@ const CAPABILITIES = [
   { icon: Cpu, name: "Instrumentation & Testing", href: "/services" },
 ];
 
-const CLIENT_LOGOS = [
-  clientLogo2,
-  clientLogo3,
-  clientLogo4,
-];
+const CLIENT_LOGOS = [clientLogo2, clientLogo3, clientLogo4];
 
 const FEATURED_PROJECTS = [
   {
@@ -283,7 +279,8 @@ function Index() {
                 <div>
                   <div className="font-display text-6xl font-bold text-foreground">15+</div>
                   <div className="mt-3 text-sm text-muted-foreground">
-                    Years serving GDCL, PARCO, MARI ENERGIES LIMITED across every province of Pakistan.
+                    Years serving GDCL, PARCO, MARI ENERGIES LIMITED across every province of
+                    Pakistan.
                   </div>
                 </div>
               </div>

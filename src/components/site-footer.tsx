@@ -31,6 +31,7 @@ export function SiteFooter() {
                 ["/services", "Services"],
                 ["/projects", "Projects"],
                 ["/team", "Team"],
+                ["/certificates", "Certificates"],
                 ["/contact", "Contact"],
               ].map(([to, label]) => (
                 <li key={to}>

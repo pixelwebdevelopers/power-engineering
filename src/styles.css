@@ -211,3 +211,11 @@
 @utility animate-glow {
   animation: glow-pulse 3s ease-in-out infinite;
 }
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
