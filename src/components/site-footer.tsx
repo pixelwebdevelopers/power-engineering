@@ -29,6 +29,7 @@ export function SiteFooter() {
               {[
                 ["/about", "About"],
                 ["/services", "Services"],
+                ["/manufacturing", "Manufacturing"],
                 ["/projects", "Projects"],
                 ["/team", "Team"],
                 ["/certificates", "Certificates"],

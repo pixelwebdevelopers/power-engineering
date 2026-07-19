@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { Menu, Phone } from "lucide-react";
+import { Menu } from "lucide-react";
 import logoUrl from "@/assets/pes-logo.png";
 import {
   Sheet,
@@ -15,6 +15,7 @@ const NAV = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
+  { to: "/manufacturing", label: "Manufacturing" },
   { to: "/projects", label: "Projects" },
   { to: "/team", label: "Team" },
   { to: "/certificates", label: "Certificates" },
@@ -61,13 +62,6 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="tel:+923337151155"
-            className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <Phone className="h-3.5 w-3.5" />
-            +92 333 7151155
-          </a>
           <Link
             to="/contact"
             className="group inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]"
@@ -122,15 +116,6 @@ export function SiteHeader() {
                   </Link>
                 </SheetClose>
               </nav>
-            </div>
-            <div className="border-t border-border pt-6">
-              <a
-                href="tel:+923337151155"
-                className="flex items-center gap-3 rounded-xl px-4 py-3 text-sm text-muted-foreground transition-colors hover:text-foreground hover:bg-accent/50"
-              >
-                <Phone className="h-4 w-4 text-primary" />
-                <span>+92 333 7151155</span>
-              </a>
             </div>
           </SheetContent>
         </Sheet>

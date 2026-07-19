@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TeamRouteImport } from './routes/team'
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ProjectsRouteImport } from './routes/projects'
+import { Route as ManufacturingRouteImport } from './routes/manufacturing'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CertificatesRouteImport } from './routes/certificates'
 import { Route as AboutRouteImport } from './routes/about'
@@ -30,6 +31,11 @@ const ServicesRoute = ServicesRouteImport.update({
 const ProjectsRoute = ProjectsRouteImport.update({
   id: '/projects',
   path: '/projects',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManufacturingRoute = ManufacturingRouteImport.update({
+  id: '/manufacturing',
+  path: '/manufacturing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -58,6 +64,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/certificates': typeof CertificatesRoute
   '/contact': typeof ContactRoute
+  '/manufacturing': typeof ManufacturingRoute
   '/projects': typeof ProjectsRoute
   '/services': typeof ServicesRoute
   '/team': typeof TeamRoute
@@ -67,6 +74,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/certificates': typeof CertificatesRoute
   '/contact': typeof ContactRoute
+  '/manufacturing': typeof ManufacturingRoute
   '/projects': typeof ProjectsRoute
   '/services': typeof ServicesRoute
   '/team': typeof TeamRoute
@@ -77,6 +85,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/certificates': typeof CertificatesRoute
   '/contact': typeof ContactRoute
+  '/manufacturing': typeof ManufacturingRoute
   '/projects': typeof ProjectsRoute
   '/services': typeof ServicesRoute
   '/team': typeof TeamRoute
@@ -88,6 +97,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/certificates'
     | '/contact'
+    | '/manufacturing'
     | '/projects'
     | '/services'
     | '/team'
@@ -97,6 +107,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/certificates'
     | '/contact'
+    | '/manufacturing'
     | '/projects'
     | '/services'
     | '/team'
@@ -106,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/certificates'
     | '/contact'
+    | '/manufacturing'
     | '/projects'
     | '/services'
     | '/team'
@@ -116,6 +128,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   CertificatesRoute: typeof CertificatesRoute
   ContactRoute: typeof ContactRoute
+  ManufacturingRoute: typeof ManufacturingRoute
   ProjectsRoute: typeof ProjectsRoute
   ServicesRoute: typeof ServicesRoute
   TeamRoute: typeof TeamRoute
@@ -142,6 +155,13 @@ declare module '@tanstack/react-router' {
       path: '/projects'
       fullPath: '/projects'
       preLoaderRoute: typeof ProjectsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manufacturing': {
+      id: '/manufacturing'
+      path: '/manufacturing'
+      fullPath: '/manufacturing'
+      preLoaderRoute: typeof ManufacturingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -180,6 +200,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   CertificatesRoute: CertificatesRoute,
   ContactRoute: ContactRoute,
+  ManufacturingRoute: ManufacturingRoute,
   ProjectsRoute: ProjectsRoute,
   ServicesRoute: ServicesRoute,
   TeamRoute: TeamRoute,
