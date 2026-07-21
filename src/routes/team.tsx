@@ -6,6 +6,7 @@ import amjadAli from "@/assets/team/amjad-ali.jpeg";
 import mehboobElahi from "@/assets/team/Mehboob-Elahi-Manager.jpeg";
 import qasimJahangeer from "@/assets/team/Qasim-Jahangeer-Site-engineer.jpeg";
 import irfanAli from "@/assets/team/Irfan-Ali.jpeg";
+import chHammad from "@/assets/team/Ch-Hammad-Site-engineer.jpeg";
 
 export const Route = createFileRoute("/team")({
   component: Team,
@@ -55,6 +56,12 @@ const TEAM = [
     role: "Site Engineer",
     image: qasimJahangeer,
     desc: "Responsible for piping fabrication engineering, ASME welding inspections, and QA/QC compliance.",
+  },
+  {
+    name: "Ch. Hammad",
+    role: "Site Engineer",
+    image: chHammad,
+    desc: "Oversees site engineering operations, structural alignment, and field construction quality execution.",
   },
   {
     name: "Irfan Ali",

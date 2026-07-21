@@ -4,12 +4,9 @@ import { PageHero } from "@/components/page-hero";
 import {
   Award,
   Building2,
-  ShieldCheck,
   FileCheck2,
   Leaf,
   HardHat,
-  Landmark,
-  HeartHandshake,
   Download,
   Eye,
   X,
@@ -18,16 +15,11 @@ import {
 } from "lucide-react";
 
 // PDF Asset Imports
-import eobiPdf from "@/assets/certificates/EOBI POWER Eng.09-Feb-2022 11-35.pdf";
-import fbrPdf from "@/assets/certificates/FBR-NTN-PVT-LTD.pdf";
 import pecPdf from "@/assets/certificates/PEC-PVT-LTD_2026.pdf";
-import pessiPdf from "@/assets/certificates/PESSI_Registration_Certificate_POWER.pdf";
 import iso14001Pdf from "@/assets/certificates/POWER ENGINEERING - ISO 14001-.pdf";
 import iso45001Pdf from "@/assets/certificates/POWER ENGINEERING - ISO 45001-.pdf";
 import iso9001Pdf from "@/assets/certificates/POWER ENGINEERING - ISO 9001-.pdf";
-import praPdf from "@/assets/certificates/PRA.pdf";
 import secpPdf from "@/assets/certificates/SECP_PES.pdf";
-import srbPdf from "@/assets/certificates/SRB Certificate .pdf";
 
 export const Route = createFileRoute("/certificates")({
   component: Certificates,
@@ -37,7 +29,7 @@ export const Route = createFileRoute("/certificates")({
       {
         name: "description",
         content:
-          "Official corporate registrations, ISO standards certifications (9001, 14001, 45001), regulatory compliance (PEC, SECP, FBR), and employee welfare certifications for Power Engineering Services.",
+          "Official corporate registrations, ISO standards certifications (9001, 14001, 45001), and regulatory compliance (PEC, SECP) for Power Engineering Services.",
       },
       { property: "og:title", content: "Certifications & Registrations — PES" },
       { property: "og:url", content: "/certificates" },
@@ -50,7 +42,7 @@ interface Certificate {
   id: string;
   title: string;
   authority: string;
-  category: "corporate" | "iso" | "provincial" | "welfare";
+  category: "corporate" | "iso";
   categoryLabel: string;
   desc: string;
   fileUrl: string;
@@ -80,17 +72,6 @@ const CERTIFICATES: Certificate[] = [
     fileUrl: secpPdf,
     icon: Building2,
     regNo: "Corporate Universal ID: 0153406",
-  },
-  {
-    id: "fbr",
-    title: "FBR NTN Tax Certificate",
-    authority: "Federal Board of Revenue, Government of Pakistan",
-    category: "corporate",
-    categoryLabel: "Corporate & Regulatory",
-    desc: "National Tax Number registration confirming compliance with federal corporate income tax and custom regulatory bodies.",
-    fileUrl: fbrPdf,
-    icon: ShieldCheck,
-    regNo: "NTN: 8147610-7",
   },
   {
     id: "iso9001",
@@ -125,58 +106,12 @@ const CERTIFICATES: Certificate[] = [
     icon: HardHat,
     regNo: "Certificate: O-205022216",
   },
-  {
-    id: "srb",
-    title: "SRB Service Tax Registration",
-    authority: "Sindh Revenue Board, Government of Sindh",
-    category: "provincial",
-    categoryLabel: "Provincial Tax",
-    desc: "Service sales tax registration enabling operations and compliant billing for engineering projects executed in the Sindh province.",
-    fileUrl: srbPdf,
-    icon: Landmark,
-    regNo: "SNTN: S8147610-7",
-  },
-  {
-    id: "pra",
-    title: "PRA Service Tax Registration",
-    authority: "Punjab Revenue Authority, Government of Punjab",
-    category: "provincial",
-    categoryLabel: "Provincial Tax",
-    desc: "Provincial sales tax registration ensuring full tax compliance for contracts and services rendered within the jurisdiction of Punjab.",
-    fileUrl: praPdf,
-    icon: Landmark,
-    regNo: "PNTN: P8147610-7",
-  },
-  {
-    id: "pessi",
-    title: "PESSI Social Security Registration",
-    authority: "Punjab Employees Social Security Institution",
-    category: "welfare",
-    categoryLabel: "Employee Welfare",
-    desc: "Registration ensuring health cover, medical facility access, and social security benefits for our workforce and project crew.",
-    fileUrl: pessiPdf,
-    icon: HeartHandshake,
-    regNo: "PESSI Reg: 10-09-51-00366-000-0808",
-  },
-  {
-    id: "eobi",
-    title: "EOBI Pension & Welfare Registry",
-    authority: "Employees' Old-Age Benefits Institution",
-    category: "welfare",
-    categoryLabel: "Employee Welfare",
-    desc: "Federal registration ensuring pension, old-age, disability, and survivor benefits contribution compliance for all enrolled personnel.",
-    fileUrl: eobiPdf,
-    icon: HeartHandshake,
-    regNo: "EOBI Sub-Reg No: K-089531",
-  },
 ];
 
 const TABS = [
   { id: "all", label: "All Credentials" },
   { id: "corporate", label: "Corporate & Regulatory" },
   { id: "iso", label: "ISO Standards" },
-  { id: "provincial", label: "Provincial Tax" },
-  { id: "welfare", label: "Employee Welfare" },
 ] as const;
 
 function Certificates() {
